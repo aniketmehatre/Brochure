@@ -1,0 +1,26 @@
+section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 225px;
+    height: 349px;
+    object-fit: cover;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+::ng-deep .custom-carousel .p-carousel-prev,
+::ng-deep .custom-carousel .p-carousel-next,
+::ng-deep .custom-carousel .p-carousel-indicators {
+    display: none !important;
+}

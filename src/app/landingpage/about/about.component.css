@@ -1,0 +1,177 @@
+.container {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.namesection {
+    margin-bottom: 1rem;
+}
+
+.university-name {
+    color: navy;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.department {
+    color: purple;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.graduate-degree {
+    color: orange;
+    font-size: 1.3rem;
+}
+
+.course-title {
+    font-size: 2rem;
+    color: darkblue;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 20rem;
+}
+
+.course-details {
+    width: 60%;
+    text-align: left;
+}
+
+.course-details h2 {
+    color: darkblue;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.course-details p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+}
+
+.key-features {
+    width: 58%;
+    background: lightblue;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.key-features h2 {
+    color: darkblue;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.key-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-features li {
+    font-size: 1rem;
+    color: black;
+    margin: 8px 0;
+}
+
+/* 📱 Tablet */
+@media (max-width: 1024px) {
+    .content {
+        padding: 1rem 5rem;
+        gap: 1.5rem;
+    }
+
+    .course-details,
+    .key-features {
+        width: 100%;
+        margin: -10px 0rem;
+    }
+
+    .course-title {
+        font-size: 1.6rem;
+    }
+
+    .university-name {
+        font-size: 1.5rem;
+    }
+
+    .department {
+        font-size: 1.3rem;
+    }
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .course-title {
+        font-size: 1.5rem;
+    }
+
+    .university-name {
+        font-size: 1.1rem;
+    }
+
+    .department {
+        font-size: 1.1rem;
+    }
+
+    .graduate-degree {
+        font-size: 1rem;
+    }
+
+    .course-details h2 {
+        font-size: 1.2rem;
+    }
+
+    .key-features h2 {
+        font-size: 1.2rem;
+    }
+
+    .course-details p,
+    .key-features li {
+        font-size: 0.95rem;
+    }
+}
+
+/* 📱 Extra small mobile */
+@media (max-width: 480px) {
+    .course-title {
+        font-size: 1.3rem;
+    }
+
+    .content {
+        padding: 0.5rem;
+    }
+
+    .course-details h2 {
+        font-size: 1.1rem;
+        margin-bottom: -2rem;
+    }
+
+    .key-features h2 {
+        font-size: 1rem;
+    }
+
+    .course-details p {
+        font-size: 0.9rem;
+    }
+
+    .key-features li {
+        font-size: 0.7rem;
+    }
+}

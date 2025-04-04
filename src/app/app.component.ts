@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'brochure';
+
+
+  applynow() {
+    window.open('https://forms.gle/BYkaoYFe4JcneQ5Y9', '_blank');
+  }
+
 }
+
