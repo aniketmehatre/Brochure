@@ -21,3 +21,15 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
+
+section {
+    width: 90%;
+    margin-left: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 100%;
+        margin-left: 0;
+    }
+}

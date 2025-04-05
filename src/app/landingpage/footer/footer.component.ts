@@ -12,18 +12,18 @@ export class FooterComponent {
     window.location.href = `mailto:${this.email}`;
   }
   makeCall() {
-    const phonenumber = '+91-92711 14213';
+    const phonenumber = '+919271114213';
     window.location.href = `tel:${phonenumber}`;
   }
   makeCall1() {
-    const phonenumbera = '+91 92711 14209';
+    const phonenumbera = '+919271114209';
     window.location.href = `tel:${phonenumbera}`;
   }
   makeCall2() {
-    const phonenumberb = '+91-92711 14620';
+    const phonenumberb = '+919271114620';
     window.location.href = `tel:${phonenumberb}`;
   }
   openlink() {
-    window.open('https://www.unipune.ac.in/', '_blank');
+    window.open('https://campus.unipune.ac.in/ccep/login.aspx', '_blank');
   }
 }

@@ -1,8 +1,8 @@
 .admission-section {
     width: 100%;
+    border-bottom: 5px solid #ffcc00;
 }
 
-/* ✅ Banner Container */
 .admission-banner {
     position: relative;
     width: 100%;
@@ -16,7 +16,6 @@
     overflow: hidden;
 }
 
-/* ✅ Dark Overlay */
 .overlay {
     position: absolute;
     top: 0;
@@ -27,7 +26,6 @@
     z-index: 1;
 }
 
-/* ✅ Navbar with two logos */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,7 +40,6 @@
     width: auto;
 }
 
-/* ✅ Banner Text Content */
 .content {
     position: relative;
     z-index: 2;
@@ -57,6 +54,18 @@ h1 {
     margin-bottom: 1rem;
 }
 
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
 .apply-btn {
     background-color: #28a745;
     color: white;
@@ -66,18 +75,15 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 1rem;
+    animation: blink 1.5s infinite;
 }
 
 .apply-btn:hover {
     background-color: #218838;
+    animation: none;
+    /* Stop blinking on hover */
 }
 
-p {
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-/* 📱 Tablet */
 @media (max-width: 1024px) {
     .navbar-logo {
         height: 60px;
@@ -97,7 +103,6 @@ p {
     }
 }
 
-/* 📱 Mobile */
 @media (max-width: 768px) {
     .navbar {
         gap: 6px;
@@ -127,7 +132,6 @@ p {
     }
 }
 
-/* 📱 Extra Small Devices */
 @media (max-width: 480px) {
     .navbar-logo {
         height: 40px;
@@ -142,7 +146,7 @@ p {
     }
 
     .apply-btn {
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 8px 14px;
         margin: 0px 8px;
     }

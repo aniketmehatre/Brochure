@@ -1,14 +1,16 @@
 <section>
-    <div>
-        <h2>Our Success Story</h2>
-    </div>
+    <div class="container">
+        <div class="heading">
+            <h2>Our Success Story</h2>
+        </div>
 
-    <p-carousel class="custom-carousel" [value]="images" [numVisible]="5" [numScroll]="1" [circular]="true"
-        [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
-        <ng-template pTemplate="item" let-image>
-            <div class="carousel-item">
-                <img [src]="image" alt="Student Image" />
-            </div>
-        </ng-template>
-    </p-carousel>
+        <p-carousel class="custom-carousel" [value]="images" [numVisible]="4" [numScroll]="1" [circular]="true"
+            [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+            <ng-template pTemplate="item" let-image>
+                <div class="carousel-item">
+                    <img [src]="image" alt="Student Image" />
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
 </section>

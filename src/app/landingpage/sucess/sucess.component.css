@@ -1,8 +1,12 @@
-section {
+.container {
     width: 80%;
     margin: auto;
     text-align: center;
 }
+
+section {
+    border-top: 5px solid #00ff3c;
+    background-color: #f2f2f2;}
 
 .carousel-item {
     display: flex;
@@ -17,10 +21,15 @@ img {
     border: 2px solid goldenrod;
     border-radius: 8px;
     margin-bottom: 1rem;
+    margin-top: 1.1rem;
 }
 
 ::ng-deep .custom-carousel .p-carousel-prev,
 ::ng-deep .custom-carousel .p-carousel-next,
 ::ng-deep .custom-carousel .p-carousel-indicators {
     display: none !important;
+}
+
+.heading {
+    margin-top: 1rem;
 }
